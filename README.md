@@ -1,6 +1,6 @@
 Game of Life
 ============
-This is demo game based on Game of Life[0] for me to practice C++.
+This is demo game based on [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) for me to practice C++.
 
 Don't expect anything to work -- especially on the master branch.  The code here will likely be experimental and should only be considered for learning/private study.
 
@@ -32,4 +32,3 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org/>
 
 
-[0]https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life

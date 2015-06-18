@@ -1,7 +1,7 @@
-#include <vector>
-#include <random>
-#include <iostream>
 #include "main.h"
+#include <iostream>
+#include <random>
+#include <vector>
 
 // animal.cpp
 // jeff tecca, 2015-06-18

@@ -1,8 +1,8 @@
-#include <vector>
-#include <string>
-#include <iostream>
-#include "base.h"
 #include "animal.h"
+#include "base.h"
+#include <iostream>
+#include <string>
+#include <vector>
 
 // main.cpp
 // jeff tecca, 2015-06-18

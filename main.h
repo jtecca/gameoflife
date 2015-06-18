@@ -1,10 +1,10 @@
 #ifndef DEFINE_main_h
 #define DEFINE_main_h
 
-#include <vector>
-#include <string>
-#include "base.h"
 #include "animal.h"
+#include "base.h"
+#include <string>
+#include <vector>
 
 // main.h
 // jeff tecca, 2015-06-18
@@ -15,4 +15,4 @@
 int loop();
 int main();
 
-#endif
+#endif // DEFINE_main_h

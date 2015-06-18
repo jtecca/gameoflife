@@ -1,6 +1,6 @@
-#include <vector>
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
 
 // base.cpp
 // jeff tecca, 2015-06-18

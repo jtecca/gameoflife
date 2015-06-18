@@ -1,9 +1,9 @@
 #ifndef DEFINE_animal_h
 #define DEFINE_animal_h
 
-#include <vector>
-#include <random>
 #include <iostream>
+#include <random>
+#include <vector>
 
 // animal.h
 // jeff tecca, 2015-06-18
@@ -19,4 +19,4 @@ animal new_animal();
 void print_animal(const animal&);
 void test_random();
 
-#endif
+#endif // DEFINE_animal_h

@@ -19,7 +19,6 @@ int main()
 
 int loop()
 {
-    test_random();
     std::vector <std::vector <std::string> > gamemap = initialize_map(MAP_WIDTH, MAP_HEIGHT);
     print_map(gamemap);
     animal a = new_animal();

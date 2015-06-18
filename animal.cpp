@@ -36,8 +36,3 @@ void print_animal(const animal& a)
         ",EN:" << a.energy <<
         "]" << std::endl;
 }
-
-void test_random()
-{
-    std::cout << std::rand() << std::endl;
-}

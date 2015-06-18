@@ -17,6 +17,5 @@ struct animal {
 std::vector<animal> initialize_animals(const int&);
 animal new_animal();
 void print_animal(const animal&);
-void test_random();
 
 #endif // DEFINE_animal_h

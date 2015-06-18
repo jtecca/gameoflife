@@ -2,15 +2,27 @@
 #include <string>
 #include <iostream>
 
-std::vector<std::string> initialize_map(const int& width, const int& height)
+// base.cpp
+// jeff tecca, 2015-06-18
+
+void print_map(const std::vector<std::string>&);
+
+std::vector <std::vector <std::string> > initialize_map(const int& width, const int& height)
 {
-    return std::vector<std::string> (width, ".");
+    // std::vector<std::string> test(width, ".");
+    // print_map(test);
+    std::vector <std::vector <std::string> > gamemap(height, std::vector<std::string>(width, "."));
+    return gamemap;
 }
 
-void print_map(const std::vector<std::string>& gamemap)
+void print_map(const std::vector <std::vector <std::string> >& gamemap)
 {
     typedef std::vector<std::string>::size_type vec_str;
-    for(vec_str i = 0; i != gamemap.size(); i++) {
-        std::cout << gamemap[i] << std::endl;
+    for(vec_str i = 0; i != gamemap.size(); ++i) {
+        for(vec_str j = 0; j != gamemap[i].size(); ++j) {
+            std::cout << gamemap[i][j];
+            std::cout << " ";
+        }
+        std::cout << std::endl;
     }
 }

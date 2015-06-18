@@ -1,0 +1,12 @@
+CC = g++
+SRCS = main.cpp base.cpp animal.cpp
+OBJS = $(SRCS:.cpp=.o)
+TARGET = gol
+
+all: $(SRCS)
+	$(CC) -o $(TARGET) $(FILES)
+
+clean:
+	rm -f *.o
+
+rebuild: clean build

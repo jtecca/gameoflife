@@ -1,10 +1,11 @@
 SHELL = /bin/sh
 CC=g++
-CFLAGS=-Wall -g -v -std=c++0x
+CFLAGS=-Wall -g -std=c++11
 RM=rm -f
 INCDIR=include
-OBJS = main.o base.o
-TARGETEXE = main
+SRCS = main.cpp base.cpp animal.cpp
+OBJS = $(SRCS:.cpp=.o)
+TARGETEXE = gol
 
 all : $(TARGETEXE)
 
@@ -16,9 +17,13 @@ $(TARGETEXE) : $(OBJS)
 %.o : %.cpp
 	$(CC) -g -o $@ -c $<
 
-base.o main.o : base.h
+.PHONY : clean
+clean:
+	-$(RM) $(OBJS) $(TARGETEXE)
 
-.PHONY: clean
-clean :
-	$(RM) $(OBJS)
-	$(RM) $(TARGETEXE)
+hello :
+	@echo "Hello"
+
+base.o main.o : base.h
+animal.o main.o : animal.h
+animal.o main.o : main.h
